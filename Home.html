@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./Home.css">
+
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Ice</a>
+        <ul>
+            <li><a href="#" class="active" >Home</a></li>
+            <li><a href="#" >About</a></li>
+            <li><a href="#" >Work</a></li>
+            <li><a href="#" >Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="Layers/stars.png" id="stars">
+        <img src="Layers/moon.png" id="moon">
+        <img src="Layers/back.png" id="back">
+        <h2 id="text">Ice Cold</h2>
+        <a href="#sec" id="btn">Explore</a>
+        <img src="Layers/front.png" id="front">
+        
+       
+    </section>
+    <div class="sec" id="sec">
+        <h2>Night is young!!</h2>
+        <p>Why you standing over there, acting like you just don't care
+            We can make our own kinda music
+            We might come from different worlds, might not be your kinda girl
+            But I just wanna let go and lose it
+            We are lost and found
+            So let's go turn the beat around
+            And maybe find a brand new sound
+            Let's turn it up right now (now)
+            Because the night is young (whoa)
+            And it's just begun (whoa)
+            Let's get it started, get it started
+            And go 'til the sun come up
+            The night is young (whoa)
+            The night is young
+            The night is young
+            Dance together, dance alone, let it out and let it show
+            Changing colors under the stroll ride
+            I just wanna have some fun, let my worries come undone
+            Right here, right now, it's feeling so right
+            We are lost and found
+            So let's go turn the beat around
+            And maybe find a brand new sound
+            Let's turn it up right now (now)
+            Because the night is young (whoa)
+            And it's just begun (whoa)
+            Let's get it started, get it started
+            And go 'til the sun come up
+            The night is young (whoa)
+            The night is young
+            The night is young
+            And I wish that it would never end
+            I wish the song could play and play
+            Be who you wanna be and then
+            Just let the rhythm take you there
+            Because the night is young
+            And it's just begun
+            Let's get it started, get it started
+            And go 'til the sun come up
+            Because the night is young (oh, the night is young, yeah)
+            And it's just begun (it's just begun)
+            Let's get it started, get it started
+            And go 'til the sun come up
+            The night is young (whoa)
+            The night is young
+            The night is young
+            </p>
+
+    </div>
+    
+    <script>
+        let stars=document.getElementById('stars');
+        let moon=document.getElementById('moon');
+        let back=document.getElementById('back');
+        let text=document.getElementById('text');
+        let btn=document.getElementById('btn');
+        let front=document.getElementById('front');
+        let header=document.querySelector('header');
+
+        window.addEventListener('scroll',function() {
+            let value=window.scrollY;
+            stars.style.left=value*0.25+'px';
+            moon.style.top=value*1.05+'px';
+            back.style.top=value*0.5+'px';
+            front.style.top=value*0+'px';
+            text.style.marginRight=value*4+'px';
+            btn.style.marginTop=value*0.5+'px';
+            header.style.top=value*0.5+'px';
+        })
+    </script>
+    
+    
+</body>
+</html>
